@@ -3,6 +3,12 @@
   "outputDirectory": "public",
   "framework": null,
   "buildCommand": "npm run build",
+  "build": {
+    "env": {
+      "VITE_SUPABASE_URL": "https://mlpbcrdeujteexdxqgpv.supabase.co",
+      "VITE_SUPABASE_PUBLISHABLE_DEFAULT_KEY": "sb_publishable_NivWJJsGIe9_l86sWQSXKA_TS4nTxz2"
+    }
+  },
   "functions": {
     "api/index.php": {
       "runtime": "vercel-php@0.7.1"
