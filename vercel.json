@@ -1,0 +1,40 @@
+{
+  "version": 2,
+  "functions": {
+    "api/index.php": {
+      "runtime": "vercel-php@0.7.1",
+      "config": {
+        "phpVersion": "8.3"
+      }
+    }
+  },
+  "routes": [
+    {
+      "src": "/(css|js|images|fonts|assets|favicon.ico|robots.txt)/(.+)",
+      "dest": "/public/$1/$2"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/api/index.php"
+    }
+  ],
+  "env": {
+    "APP_NAME": "Laravel",
+    "APP_ENV": "production",
+    "APP_KEY": "base64:We9YAoXpuKN5WpD4/YlLxwrU73YuU5NbYQrMYQ/N3zQ=",
+    "APP_DEBUG": "false",
+    "APP_URL": "https://pelanggan-wifi.vercel.app",
+    "APP_LOCALE": "en",
+    "DB_CONNECTION": "pgsql",
+    "DB_HOST": "aws-1-ap-northeast-2.pooler.supabase.com",
+    "DB_PORT": "5432",
+    "DB_DATABASE": "postgres",
+    "DB_USERNAME": "postgres.mlpbcrdeujteexdxqgpv",
+    "SESSION_DRIVER": "database",
+    "SESSION_LIFETIME": "120",
+    "CACHE_STORE": "database",
+    "QUEUE_CONNECTION": "database",
+    "VITE_SUPABASE_URL": "https://mlpbcrdeujteexdxqgpv.supabase.co",
+    "VITE_SUPABASE_PUBLISHABLE_DEFAULT_KEY": "sb_publishable_NivWJJsGIe9_l86sWQSXKA_TS4nTxz2"
+  }
+}
