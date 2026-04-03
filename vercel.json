@@ -10,12 +10,20 @@
   },
   "routes": [
     {
-      "src": "/(build)/(.+)",
-      "dest": "/public/$1/$2"
+      "src": "/build/(.*)",
+      "headers": { "Cache-Control": "public, max-age=31536000, immutable" }
     },
     {
-      "src": "/(css|js|images|fonts|assets|favicon.ico|robots.txt)/(.+)",
-      "dest": "/public/$1/$2"
+      "src": "/(.*\\.(css|js|ico|png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot|map|webp))",
+      "headers": { "Cache-Control": "public, max-age=31536000" }
+    },
+    {
+      "src": "/build/(.*)",
+      "continue": true
+    },
+    {
+      "src": "/(.*\\.(css|js|ico|png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot|map|webp))",
+      "continue": true
     },
     {
       "src": "/(.*)",
