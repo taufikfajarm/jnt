@@ -2,7 +2,6 @@
   "version": 2,
   "outputDirectory": "public",
   "framework": null,
-  "installCommand": "composer install --no-dev --optimize-autoloader --no-interaction && npm install",
   "buildCommand": "npm run build",
   "functions": {
     "api/index.php": {
