@@ -293,7 +293,7 @@ const fetchPelanggans = async () => {
   const { data, error } = await supabase
     .from('pelanggans')
     .select('*, paket:pakets(*), sales:sales(*), desa:desas(id, nama, kecamatan:kecamatans(id, nama, kabupaten:kabupatens(id, nama)))')
-    .order('created_at', { ascending: false })
+    .order('tanggal_daftar', { ascending: false })
   if (!error) pelanggans.value = data
 }
 
