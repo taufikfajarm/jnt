@@ -1,0 +1,34 @@
+
+npm verbose cli C:\Program Files\nodejs\node.exe C:\Users\IDEAPAD GAMING\AppData\Roaming\npm\node_modules\npm\bin\npm-cli.js
+npm info using npm@10.8.1
+npm info using node@v22.18.0
+npm verbose title npm install
+npm verbose argv "install" "--loglevel" "verbose"
+npm verbose logfile logs-max:10 dir:C:\Users\IDEAPAD GAMING\AppData\Local\npm-cache\_logs\2026-04-03T05_59_39_048Z-
+npm verbose logfile C:\Users\IDEAPAD GAMING\AppData\Local\npm-cache\_logs\2026-04-03T05_59_39_048Z-debug-0.log
+npm verbose shrinkwrap failed to load node_modules/.package-lock.json out of date, updated: node_modules
+npm verbose shrinkwrap failed to load node_modules/.package-lock.json out of date, updated: node_modules
+npm http fetch GET 200 https://registry.npmjs.org/plain-crypto-js 17ms (cache hit)
+npm verbose type range
+npm verbose stack plain-crypto-js: No matching version found for plain-crypto-js@^4.2.1.
+npm verbose stack     at module.exports (C:\Users\IDEAPAD GAMING\AppData\Roaming\npm\node_modules\npm\node_modules\npm-pick-manifest\lib\index.js:209:23)
+npm verbose stack     at RegistryFetcher.manifest (C:\Users\IDEAPAD GAMING\AppData\Roaming\npm\node_modules\npm\node_modules\pacote\lib\registry.js:130:54)
+npm verbose stack     at async #fetchManifest (C:\Users\IDEAPAD GAMING\AppData\Roaming\npm\node_modules\npm\node_modules\@npmcli\arborist\lib\arborist\build-ideal-tree.js:1199:20)
+npm verbose stack     at async #nodeFromEdge (C:\Users\IDEAPAD GAMING\AppData\Roaming\npm\node_modules\npm\node_modules\@npmcli\arborist\lib\arborist\build-ideal-tree.js:1037:19)
+npm verbose stack     at async #buildDepStep (C:\Users\IDEAPAD GAMING\AppData\Roaming\npm\node_modules\npm\node_modules\@npmcli\arborist\lib\arborist\build-ideal-tree.js:901:11)
+npm verbose stack     at async Arborist.buildIdealTree (C:\Users\IDEAPAD GAMING\AppData\Roaming\npm\node_modules\npm\node_modules\@npmcli\arborist\lib\arborist\build-ideal-tree.js:181:7)
+npm verbose stack     at async Promise.all (index 1)
+npm verbose stack     at async Arborist.reify (C:\Users\IDEAPAD GAMING\AppData\Roaming\npm\node_modules\npm\node_modules\@npmcli\arborist\lib\arborist\reify.js:131:5)
+npm verbose stack     at async Install.exec (C:\Users\IDEAPAD GAMING\AppData\Roaming\npm\node_modules\npm\lib\commands\install.js:150:5)
+npm verbose stack     at async Npm.exec (C:\Users\IDEAPAD GAMING\AppData\Roaming\npm\node_modules\npm\lib\npm.js:207:9)
+npm error code ETARGET
+npm error notarget No matching version found for plain-crypto-js@^4.2.1.
+npm error notarget In most cases you or one of your dependencies are requesting
+npm error notarget a package version that doesn't exist.
+npm verbose cwd D:\laragon\www\pelanggan-wifi
+npm verbose os Windows_NT 10.0.26200
+npm verbose node v22.18.0
+npm verbose npm  v10.8.1
+npm verbose exit 1
+npm verbose code 1
+npm error A complete log of this run can be found in: C:\Users\IDEAPAD GAMING\AppData\Local\npm-cache\_logs\2026-04-03T05_59_39_048Z-debug-0.log
